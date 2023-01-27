@@ -1,3 +1,100 @@
 /*============================================================================================*/
 /* Your custom styles below */
 /*============================================================================================*/
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+  }
+  .animate__animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  .animate__animated.animate__infinite {
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+  }
+@-webkit-keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes pulse {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  .animate__pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+
+#room .title h6{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+#room .title h6 i{
+    font-size: 2.875rem;
+    color: #978667;
+    display: block;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border: 2px solid #978667;
+    border-bottom: 0;
+    border-top: 0;
+    border-left-width: 15px;
+    border-right-width: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#room .title h6 span{
+    margin-left: 1rem;
+    font-style: italic;
+    font-weight: 600;
+}
+#room .title h6 span strong{
+    font-size: 1.25rem;
+    color: #f55442;
+}
+
+
+a.box_cat_rooms .info i{
+    font-style: normal;
+    color: #978667;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+

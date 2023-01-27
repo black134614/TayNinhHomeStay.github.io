@@ -11,9 +11,9 @@ $mail = new PHPMailer(true);
 try {
 
    //Recipients - main edits
-    $mail->setFrom('info@Paradise.com', 'Message from Paradise Hotel');             // Email Address and Name FROM
-    $mail->addAddress('info@Paradise.com', 'Jhon Doe');                            // Email Address and Name TO - Name is optional
-    $mail->addReplyTo('noreply@Paradise.com', 'Message from Paradise Hotel');       // Email Address and Name NOREPLY
+    $mail->setFrom('luanvo1ad@gmail.com', 'Message from Paradise Hotel');             // Email Address and Name FROM
+    $mail->addAddress('luanvo1ad@gmail.com', 'Luan vo');                            // Email Address and Name TO - Name is optional
+   /// $mail->addReplyTo('noreply@Paradise.com', 'Message from Paradise Hotel');       // Email Address and Name NOREPLY
     $mail->isHTML(true);                                                       
     $mail->Subject = 'Message from Paradise Hotel';                                // Email Subject    
 
@@ -60,7 +60,7 @@ try {
     }                          
             
     // Get the email's html content
-    $email_html = file_get_contents('template-email.html');
+    $email_html = file_get_contents('http://127.0.0.1:5500/home-stay/contacts.html');
 
     // Setup html content
     $e_content = "You have been contacted by <strong>$name_contact $lastname_contact</strong> with the following message:<br><br>$message_contact<br><br>You can contact $name_contact via email at $email_contact or by phone at $phone_contact";

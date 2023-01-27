@@ -11,9 +11,9 @@ $mail = new PHPMailer(true);
 try {
 
     //Recipients - main edits
-    $mail->setFrom('info@Paradise.com', 'Message from Paradise Hotel');             // Email Address and Name FROM
-    $mail->addAddress('info@Paradise.com', 'Jhon Doe');                            // Email Address and Name TO - Name is optional
-    $mail->addReplyTo('noreply@Paradise.com', 'Message from Paradise Hotel');       // Email Address and Name NOREPLY
+    $mail->setFrom('luanvo1ad@gmail.com', 'Message from Paradise Hotel');             // Email Address and Name FROM
+    $mail->addAddress('luanvo1ad@gmail.com', 'Jhon Doe');                            // Email Address and Name TO - Name is optional
+    //$mail->addReplyTo('noreply@Paradise.com', 'Message from Paradise Hotel');       // Email Address and Name NOREPLY
     $mail->isHTML(true);                                                       
     $mail->Subject = 'Message from Paradise Hotel';                                // Email Subject     
 
